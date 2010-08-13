@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ware model="Welcome" port="8812" default="welcome" version="1.1">
+	<service name="welcome">
+		<flow>
+			<speak>
+				<![CDATA[
+					<html>
+						<body>
+							<center>
+								<h1> the title </h1>
+								<div>
+									this is content!
+								</div>
+							</center>
+						</body>
+					</html>
+				]]>
+			</speak>
+		</flow>
+	</service>
+</ware>

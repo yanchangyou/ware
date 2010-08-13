@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ware model="Welcome" defaultPort="8811" defaultScene="welcome">
+	<scene name="welcome">
+		<flow>
+			<speak>Welcome to WARE world!</speak>
+		</flow>
+	</scene>
+</ware>

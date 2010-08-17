@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ghcc>
+
+	<computer>
+		<net>
+			<ip address="" mask="" gateway="" dns="">
+
+			</ip>
+			<nic>
+			</nic>
+		</net>
+		<server>
+			<service port="10001">
+			</service>
+			<service port="10002">
+			</service>
+		</server>
+	</computer>
+
+	<net address="" mask="" gateway="">
+		<computer ip="">
+
+		</computer>
+	</net>
+
+	<net address="" mask="" gateway="">
+		<host address="">
+		</host>
+	</net>
+	<human>
+	</human>
+
+	<cube>
+
+	</cube>
+
+	<node>
+
+	</node>
+
+	<cell>
+	</cell>
+
+	<system>
+
+	</system>
+
+	<entry>
+	</entry>
+	<entitly>
+	</entitly>
+
+	<point>
+	</point>
+	<line>
+	</line>
+	<plane>
+	</plane>
+	<solid>
+	</solid>
+
+	<set>
+	</set>
+	<list>
+	</list>
+	<tree>
+	</tree>
+	<graph>
+	</graph>
+
+	<space>
+	</space>
+	<sphere>
+	</sphere>
+</ghcc>

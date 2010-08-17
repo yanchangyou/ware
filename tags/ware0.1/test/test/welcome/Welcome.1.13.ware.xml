@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ware model="Welcome" port="8813" default="welcome" version="1.1">
+	<service name="welcome">
+		<flow>
+			<sequence>
+				<speak>Welcome to WARE world!</speak>
+			</sequence>
+		</flow>
+	</service>
+</ware>

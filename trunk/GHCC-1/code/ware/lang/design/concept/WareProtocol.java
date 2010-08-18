@@ -1,8 +1,8 @@
-package ware.lang.design;
+package ware.lang.design.concept;
 
 /**
  * 
- * WareData代表一个ware协议的数据<br>
+ * WareProtocol代表一个ware协议的数据<br>
  * ware协议由xml格式描述<br>
  * <br>
  * ware协议有四种类型:<br>
@@ -44,13 +44,15 @@ package ware.lang.design;
  * <br>
  * 类型1,2代表了平级之间的交互方式<br>
  * 类型3,4代表了上下级之间的交互方式<br>
+ * <br>
+ * 感谢hafeyang@gmail.com提供的无敌textarea,使注释里能直接写xml<br>
  * 
  * @author yanchangyou
  * @date 2010-8-19 0:10:49
  * @version 1.0.0
  *
  */
-public interface WareData {
+public interface WareProtocol {
 
 	/**
 	 * 获取 ware data的来源ware URI

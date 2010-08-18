@@ -1,4 +1,6 @@
-package ware.lang.design;
+package ware.lang.design.concept;
+
+import ware.lang.design.drive.Drive;
 
 /**
  * request : ware的请求<br>
@@ -8,11 +10,11 @@ package ware.lang.design;
  * @author yanchangyou
  * @date 2010-8-18 23:40:57
  */
-public interface Request {
+public interface Request extends Drive {
 
 	/**
 	 * 获取请求的ware data
 	 * @return
 	 */
-	public WareData getRequestWareData();
+	public WareProtocol getRequestWareProtocol();
 }

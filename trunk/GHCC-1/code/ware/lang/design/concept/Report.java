@@ -1,4 +1,6 @@
-package ware.lang.design;
+package ware.lang.design.concept;
+
+import ware.lang.design.drive.Drive;
 
 /**
  * 
@@ -12,11 +14,11 @@ package ware.lang.design;
  * @author yanchangyou
  *
  */
-public interface Report {
+public interface Report extends Drive {
 
 	/**
 	 * 获取任务汇报的数据
 	 * @return
 	 */
-	public WareData getReportWareData();
+	public WareProtocol getReportWareProtocol();
 }

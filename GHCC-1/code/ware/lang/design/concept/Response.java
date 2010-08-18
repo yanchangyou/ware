@@ -1,4 +1,6 @@
-package ware.lang.design;
+package ware.lang.design.concept;
+
+import ware.lang.design.drive.Drive;
 
 /**
  * response : waer的响应<br>
@@ -9,11 +11,11 @@ package ware.lang.design;
  * @author yanchangyou
  *
  */
-public interface Response {
+public interface Response extends Drive {
 
 	/**
 	 * 获取响应的ware data
 	 * @return
 	 */
-	public WareData getResponeWareData();
+	public WareProtocol getResponeWareProtocol();
 }

@@ -1,4 +1,6 @@
-package ware.lang.design;
+package ware.lang.design.concept;
+
+import ware.lang.design.drive.Drive;
 
 /**
  * 连接<br>
@@ -14,7 +16,7 @@ package ware.lang.design;
  * @version 1.0.0
  *
  */
-public interface Connect {
+public interface Connect extends Drive {
 
 	/**
 	 * 获取ware的地址<br>

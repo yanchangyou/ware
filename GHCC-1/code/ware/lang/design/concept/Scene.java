@@ -1,4 +1,6 @@
-package ware.lang.design;
+package ware.lang.design.concept;
+
+import ware.lang.design.drive.Drive;
 
 /**
  * 
@@ -15,17 +17,17 @@ package ware.lang.design;
  * @version 1.0.0
  *
  */
-public interface Scene {
+public interface Scene extends Drive {
 
 	/**
 	 * 场景类型 : 服务
 	 */
-	String SCENE_TYPE_OF_SERVICE = "SERVICE";
+	//String SCENE_TYPE_OF_SERVICE = "SERVICE";//是否适合在接口中书写
 
 	/**
 	 * 场景类型 : 任务
 	 */
-	String SCENE_TYPE_OF_TASK = "TASK";
+	//String SCENE_TYPE_OF_TASK = "TASK";
 	
 	
 	/**

@@ -53,9 +53,26 @@ package ware.lang.design;
 public interface WareData {
 
 	/**
-	 * 获取数据来源的ware URI
-	 * @return
+	 * 获取 ware data的来源ware URI
+	 * @return 来源
 	 */
 	public String getFrom();
 	
+	/**
+	 * 获取ware data的目标ware URI
+	 * @return 目标
+	 */
+	public String getTo();
+	
+	/**
+	 * 获取情景类型 : 服务(SERVICE) or 任务(TASK)
+	 * @return 情景类型
+	 */
+	public String getSceneType();
+	
+	/**
+	 * 获取具体的数据, 格式为xml
+	 * @return
+	 */
+	public String getXMLData();
 }

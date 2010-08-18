@@ -11,4 +11,9 @@ package ware.lang.design;
  */
 public interface Response {
 
+	/**
+	 * 获取响应的ware data
+	 * @return
+	 */
+	public WareData getResponeWareData();
 }

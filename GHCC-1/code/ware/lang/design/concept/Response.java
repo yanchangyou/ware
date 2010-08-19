@@ -11,11 +11,11 @@ import ware.lang.design.drive.Drive;
  * @author yanchangyou
  *
  */
-public interface Response extends Drive {
+public interface Response extends Drive, WareProtocolDataDeliver {
 
 	/**
 	 * 获取响应的ware data
 	 * @return
 	 */
-	public WareProtocol getResponeWareProtocol();
+	public WareProtocolData getResponeWareProtocolData();
 }

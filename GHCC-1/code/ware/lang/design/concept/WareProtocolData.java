@@ -2,7 +2,7 @@ package ware.lang.design.concept;
 
 /**
  * 
- * WareProtocol代表一个ware协议的数据<br>
+ * WareProtocolData代表一个ware协议的数据<br>
  * ware协议由xml格式描述<br>
  * <br>
  * ware协议有四种类型:<br>
@@ -10,7 +10,7 @@ package ware.lang.design.concept;
 1,请求(request)<br>
 <textarea cols="60" rows="5">
 <?xml version="1.0" encoding="utf-8"?>
-<ware from="ware URI" to="ware URI">
+<ware from="SceneID" to="SceneID">
 	<request><![CDATA[(XML DATA)]]></request>
 </ware>
 </textarea><br>
@@ -18,7 +18,7 @@ package ware.lang.design.concept;
 2,响应(response)<br>
 <textarea cols="60" rows="5">
 <?xml version="1.0" encoding="utf-8"?>
-<ware from="ware URI" to="ware URI">
+<ware from="SceneID" to="SceneID">
 	<response><![CDATA[(XML DATA)]]></response>
 </ware>
 </textarea><br>
@@ -26,7 +26,7 @@ package ware.lang.design.concept;
 3,安排(plan)<br>
 <textarea cols="60" rows="5">
 <?xml version="1.0" encoding="utf-8"?>
-<ware from="ware URI" to="ware URI">
+<ware from="SceneID" to="SceneID">
 	<plan><![CDATA[(XML DATA)]]></plan>
 </ware>
 </textarea><br>
@@ -34,43 +34,43 @@ package ware.lang.design.concept;
 4,汇报(report)<br>
 <textarea cols="60" rows="5">
 <?xml version="1.0" encoding="utf-8"?>
-<ware from="ware URI" to="ware URI">
+<ware from="SceneID" to="SceneID">
 	<report><![CDATA[(XML DATA)]]></report>
 </ware>
 </textarea><br>
  * <br>
- * 其中 ware URI 代表ware的标识符 格式如下:<br>
+ * 其中 SceneID 代表ware的不同场景的标识符 格式如下:<br>
  * &nbsp;&nbsp;&nbsp;&nbsp; host:port:scene <br>
  * <br>
  * 类型1,2代表了平级之间的交互方式<br>
  * 类型3,4代表了上下级之间的交互方式<br>
  * <br>
- * 感谢hafeyang@gmail.com提供的无敌textarea,使注释里能直接写xml<br>
+ * 感谢hafeyang@gmail.com提供的无敌textarea方法,使注释里能直接写xml<br>
  * 
  * @author yanchangyou
  * @date 2010-8-19 0:10:49
  * @version 1.0.0
  *
  */
-public interface WareProtocol {
+public interface WareProtocolData {
 
 	/**
-	 * 获取 ware data的来源ware URI
-	 * @return 来源
+	 * 获取 ware data的来源场景
+	 * @return 来源场景ID
 	 */
-	public String getFrom();
+	public SceneID getFrom();
 	
 	/**
-	 * 获取ware data的目标ware URI
-	 * @return 目标
+	 * 获取ware data的目标场景
+	 * @return 目标场景ID
 	 */
-	public String getTo();
+	public SceneID getTo();
 	
 	/**
-	 * 获取情景类型 : 服务(SERVICE) or 任务(TASK)
-	 * @return 情景类型
+	 * 获取场景类型 : 服务(SERVICE) or 任务(TASK)
+	 * @return 场景类型
 	 */
-	public String getSceneType();
+	public SceneType getSceneType();
 	
 	/**
 	 * 获取具体的数据, 格式为xml

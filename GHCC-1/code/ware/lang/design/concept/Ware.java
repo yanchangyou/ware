@@ -33,10 +33,10 @@ public interface Ware extends Drive {
 	public String getModel();
 	
 	/**
-	 * 获取端口
-	 * @return ware的端口
+	 * 获取ware id
+	 * @return waerID
 	 */
-	public int getPort();
+	public WareID getWareID();
 	
 	/**
 	 * ware诞生的方法

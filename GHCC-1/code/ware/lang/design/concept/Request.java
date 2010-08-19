@@ -10,11 +10,11 @@ import ware.lang.design.drive.Drive;
  * @author yanchangyou
  * @date 2010-8-18 23:40:57
  */
-public interface Request extends Drive {
+public interface Request extends Drive, WareProtocolDataDeliver {
 
 	/**
 	 * 获取请求的ware data
 	 * @return
 	 */
-	public WareProtocol getRequestWareProtocol();
+	public WareProtocolData getRequestWareProtocolData();
 }

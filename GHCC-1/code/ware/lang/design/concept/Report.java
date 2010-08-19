@@ -14,11 +14,11 @@ import ware.lang.design.drive.Drive;
  * @author yanchangyou
  *
  */
-public interface Report extends Drive {
+public interface Report extends Drive, WareProtocolDataDeliver {
 
 	/**
 	 * 获取任务汇报的数据
 	 * @return
 	 */
-	public WareProtocol getReportWareProtocol();
+	public WareProtocolData getReportWareProtocolData();
 }

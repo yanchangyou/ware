@@ -20,26 +20,17 @@ import ware.lang.design.drive.Drive;
 public interface Scene extends Drive {
 
 	/**
-	 * 场景类型 : 服务
+	 * 获取场景ID
+	 * @return 场景ID
 	 */
-	//String SCENE_TYPE_OF_SERVICE = "SERVICE";//是否适合在接口中书写
-
-	/**
-	 * 场景类型 : 任务
-	 */
-	//String SCENE_TYPE_OF_TASK = "TASK";
-	
-	
-	/**
-	 * 获取场景的名称
-	 * @return 场景名称
-	 */
-	public String getName();
+	public SceneID getSceneID();
 	
 	/**
 	 * 获取场景类型: service or task
 	 * @return 场景类型
 	 */
-	public String getType();
+	public SceneType getType();
+	
+	
 	
 }

@@ -1,6 +1,7 @@
-package ware.lang.design.concept;
+package ware.lang.design.concept.activeconcept;
 
-import ware.lang.design.drive.Drive;
+import ware.lang.design.concept.staticconcept.WareID;
+
 
 /**
  * ware接口<br><br>
@@ -23,7 +24,7 @@ import ware.lang.design.drive.Drive;
  * @version 1.0.0
  *
  */
-public interface Ware extends Drive {
+public interface Ware extends ActiveConcept {
 
 	/**
 	 * 获取ware的模型<br>

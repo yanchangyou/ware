@@ -1,4 +1,4 @@
-package ware.lang.design.concept;
+package ware.lang.design.concept.staticconcept;
 
 /**
  * 场景ID<br>

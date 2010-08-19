@@ -1,6 +1,8 @@
-package ware.lang.design.concept;
+package ware.lang.design.concept.activeconcept;
 
-import ware.lang.design.drive.Drive;
+import ware.lang.design.concept.staticconcept.SceneID;
+import ware.lang.design.concept.staticconcept.SceneType;
+
 
 /**
  * 
@@ -17,7 +19,7 @@ import ware.lang.design.drive.Drive;
  * @version 1.0.0
  *
  */
-public interface Scene extends Drive {
+public interface Scene extends ActiveConcept {
 
 	/**
 	 * 获取场景ID

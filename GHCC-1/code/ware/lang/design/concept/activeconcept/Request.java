@@ -1,6 +1,7 @@
-package ware.lang.design.concept;
+package ware.lang.design.concept.activeconcept;
 
-import ware.lang.design.drive.Drive;
+import ware.lang.design.concept.staticconcept.WareProtocolData;
+
 
 /**
  * request : ware的请求<br>
@@ -10,7 +11,7 @@ import ware.lang.design.drive.Drive;
  * @author yanchangyou
  * @date 2010-8-18 23:40:57
  */
-public interface Request extends Drive, WareProtocolDataDeliver {
+public interface Request extends Deliver {
 
 	/**
 	 * 获取请求的ware data

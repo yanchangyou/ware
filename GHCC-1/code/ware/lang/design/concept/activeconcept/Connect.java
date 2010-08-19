@@ -1,6 +1,7 @@
-package ware.lang.design.concept;
+package ware.lang.design.concept.activeconcept;
 
-import ware.lang.design.drive.Drive;
+import ware.lang.design.concept.staticconcept.SceneID;
+
 
 /**
  * 连接<br>
@@ -20,7 +21,7 @@ import ware.lang.design.drive.Drive;
  * @version 1.0.1
  *
  */
-public interface Connect extends Drive {
+public interface Connect extends ActiveConcept {
 
 	/**
 	 * 获取ware所在场景

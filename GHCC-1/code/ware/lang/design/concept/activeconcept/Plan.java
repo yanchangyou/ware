@@ -1,6 +1,7 @@
-package ware.lang.design.concept;
+package ware.lang.design.concept.activeconcept;
 
-import ware.lang.design.drive.Drive;
+import ware.lang.design.concept.staticconcept.WareProtocolData;
+
 
 /**
  * 
@@ -14,7 +15,7 @@ import ware.lang.design.drive.Drive;
  * @author yanchangyou
  *
  */
-public interface Plan extends Drive, WareProtocolDataDeliver {
+public interface Plan extends Deliver {
 
 	/**
 	 * 获取任务的数据

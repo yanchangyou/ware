@@ -1,6 +1,7 @@
-package ware.lang.design.concept;
+package ware.lang.design.concept.activeconcept;
 
-import ware.lang.design.drive.Drive;
+import ware.lang.design.concept.staticconcept.WareProtocolData;
+
 
 /**
  * response : waer的响应<br>
@@ -11,7 +12,7 @@ import ware.lang.design.drive.Drive;
  * @author yanchangyou
  *
  */
-public interface Response extends Drive, WareProtocolDataDeliver {
+public interface Response extends Deliver {
 
 	/**
 	 * 获取响应的ware data

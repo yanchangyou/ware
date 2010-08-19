@@ -1,4 +1,4 @@
-package ware.lang.design.concept;
+package ware.lang.design.concept.staticconcept;
 
 /**
  * 
@@ -12,7 +12,7 @@ package ware.lang.design.concept;
  * @author yanchangyou
  *
  */
-public interface WareID {
+public interface WareID extends StaticConcept {
 
 	/**
 	 * 获取主机

@@ -1,4 +1,4 @@
-package ware.lang.design.concept;
+package ware.lang.design.concept.staticconcept;
 
 /**
  * 
@@ -52,7 +52,7 @@ package ware.lang.design.concept;
  * @version 1.0.0
  *
  */
-public interface WareProtocolData {
+public interface WareProtocolData extends StaticConcept {
 
 	/**
 	 * 获取 ware data的来源场景

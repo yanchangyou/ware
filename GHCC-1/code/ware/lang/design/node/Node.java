@@ -5,13 +5,16 @@ package ware.lang.design.node;
  * 
  * 
  * @author yanchangyou
+ * @date 2010-08-19 23:56:01
+ * @version 1.0.0
  *
  */
-public interface Node extends Relation, Operate {
+public interface Node extends Relation, RelationOperate {
 
 	/**
 	 * 获取节点的标签
 	 * @return 标签名称
 	 */
 	public String getTag();
+	
 }

@@ -1,6 +1,6 @@
 package ware.lang.design.drive;
 
-import ware.lang.design.WareDrive;
+import ware.lang.design.Ware$Drive;
 
 /**
  * 
@@ -11,7 +11,7 @@ import ware.lang.design.WareDrive;
  * @version 1.2.0
  *
  */
-public interface Run extends WareDrive {
+public interface Ware$Run extends Ware$Drive {
 
 	/**
 	 * 运行程序

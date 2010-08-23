@@ -1,6 +1,6 @@
 package ware.lang.design;
 
-import org.cop.Node;
+import org.cop.norm.Node;
 
 
 /**
@@ -12,7 +12,7 @@ import org.cop.Node;
  * @version 1.2.0
  *
  */
-public interface WareNode extends Node {
+public interface Ware$Node extends Node {
 	
 	/**
 	 * 获取名称

@@ -1,6 +1,6 @@
 package ware.lang.design.node;
 
-import ware.lang.design.WareNode;
+import ware.lang.design.Ware$Node;
 
 /**
  * 属性节点
@@ -9,7 +9,7 @@ import ware.lang.design.WareNode;
  * @version 1.1.0
  *
  */
-public interface Attribute extends WareNode {
+public interface Ware$Attribute extends Ware$Node {
 	
 	/**
 	 * 获取值

@@ -1,6 +1,6 @@
 package ware.lang.design;
 
-import org.cop.Entity;
+import org.cop.norm.Entity;
 
 
 /**
@@ -10,7 +10,7 @@ import org.cop.Entity;
  * @version 1.2.0
  *
  */
-public interface WareEntity extends Entity {
+public interface Ware$Entity extends Entity {
 
 	/**
 	 * 加载java对象
@@ -25,7 +25,7 @@ public interface WareEntity extends Entity {
 	/**
 	 * 获取节点来构建实体
 	 */
-	public WareNode getNode();
+	public Ware$Node getNode();
 	
 	/**
 	 * 是否需要在构建之前做什么

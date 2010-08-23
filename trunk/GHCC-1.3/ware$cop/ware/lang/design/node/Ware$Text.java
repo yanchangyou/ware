@@ -1,6 +1,6 @@
 package ware.lang.design.node;
 
-import ware.lang.design.WareNode;
+import ware.lang.design.Ware$Node;
 
 /**
  * 为本元素
@@ -9,7 +9,7 @@ import ware.lang.design.WareNode;
  * @version 1.1.0
  *
  */
-public interface Text extends WareNode {
+public interface Ware$Text extends Ware$Node {
 
 	/**
 	 * 获取文本内容

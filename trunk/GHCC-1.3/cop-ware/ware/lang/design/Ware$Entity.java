@@ -28,6 +28,11 @@ public interface Ware$Entity extends Entity {
 	public Ware$Node getNode();
 	
 	/**
+	 * 设置节点
+	 */
+	public void setNode(Ware$Node node);
+	
+	/**
 	 * 是否需要在构建之前做什么
 	 * @return
 	 */

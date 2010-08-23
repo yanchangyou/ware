@@ -9,11 +9,18 @@ import ware.lang.design.Ware$Node;
  * @version 1.1.0
  *
  */
-public interface Ware$Attribute extends Ware$Node {
+public interface Ware$AttributeNode extends Ware$Node {
 	
 	/**
 	 * 获取值
 	 * @return 值
 	 */
 	public String getValue();
+	
+	/**
+	 * 设置值
+	 * @param value
+	 */
+	public void setValue(String value);
+	
 }

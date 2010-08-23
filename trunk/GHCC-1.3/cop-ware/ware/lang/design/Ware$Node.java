@@ -20,6 +20,14 @@ public interface Ware$Node extends Node {
 	 */
 	public String getNodeName();
 	
+
+	/**
+	 * 设置节点名称
+	 * @param nodeName
+	 * @return
+	 */
+	public void setNodeName(String nodeName);
+	
 	/**
 	 * 检查节点
 	 */

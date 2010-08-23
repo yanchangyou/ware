@@ -9,11 +9,16 @@ import ware.lang.design.Ware$Node;
  * @version 1.1.0
  *
  */
-public interface Ware$Text extends Ware$Node {
+public interface Ware$TextNode extends Ware$Node {
 
 	/**
 	 * 获取文本内容
 	 * @return
 	 */
-	public String getText();
+	public String getTextContext();
+	
+	/**
+	 * 设置文本内容
+	 */
+	public void setTextContext(String textContext);
 }

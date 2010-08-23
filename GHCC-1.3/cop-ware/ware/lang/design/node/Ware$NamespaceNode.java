@@ -9,7 +9,7 @@ import ware.lang.design.Ware$Node;
  * @version 1.1.0
  *
  */
-public interface Ware$Namespace extends Ware$Node {
+public interface Ware$NamespaceNode extends Ware$Node {
 
 	/**
 	 * 名称空间前缀

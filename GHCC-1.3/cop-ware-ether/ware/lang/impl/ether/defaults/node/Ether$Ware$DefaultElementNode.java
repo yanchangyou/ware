@@ -1,4 +1,4 @@
-package ware.lang.design.node;
+package ware.lang.impl.ether.defaults.node;
 
 import java.util.List;
 
@@ -11,19 +11,19 @@ import ware.lang.design.Ware$Node;
  * @version 1.1.0
  *
  */
-public interface Ware$Element extends Ware$Node {
+public class Ether$Ware$DefaultElementNode extends Ether$Ware$DefaultNode {
 	
 	/**
 	 * 获取所有属性节点
 	 * @return 所有属性节点
 	 */
-	public List<Ware$Attribute> getAttributes();
+	public List<Ether$Ware$Attribute> getAttributes();
 	
 	/**
 	 * 获取子元素
 	 * @return 子元素
 	 */
-	public List<Ware$Element> getSubElements();
+	public List<Ether$Ware$DefaultElementNode> getSubElements();
 	
 	/**
 	 * 获取标签名称

@@ -1,4 +1,4 @@
-package ware.lang.design.node;
+package ware.lang.impl.ether.abstracts.node;
 
 
 /**
@@ -9,7 +9,7 @@ package ware.lang.design.node;
  * @version 1.1.0
  *
  */
-public interface Ware$XMLDocument extends Ware$Element {
+public class Ether$Ware$AbstractXMLDocumentNode extends Ether$Ware$DefaultNode {
 
 	/**
 	 * 获取xml文档版本
@@ -27,5 +27,5 @@ public interface Ware$XMLDocument extends Ware$Element {
 	 * 获取根元素
 	 * @return 根元素
 	 */
-	public Ware$Element getRootElement();
+	public Ether$Ware$AbstractElementNode getRootElement();
 }

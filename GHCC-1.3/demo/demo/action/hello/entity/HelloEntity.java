@@ -5,12 +5,12 @@ import java.util.List;
 import ware.lang.design.Ware$Entity;
 import ware.lang.design.Ware$Node;
 import ware.lang.design.drive.Ware$Execute;
-import ware.lang.design.node.Ware$Attribute;
-import ware.lang.design.node.Ware$Text;
-import ware.lang.design.node.Ware$TextElement;
+import ware.lang.design.node.Ware$AttributeNode;
+import ware.lang.design.node.Ware$TextNode;
+import ware.lang.design.node.Ware$TextElementNode;
 import demo.action.hello.concept.HelloConcept;
 
-public class HelloEntity implements Ware$Entity, HelloConcept, Ware$TextElement, Ware$Execute {
+public class HelloEntity implements Ware$Entity, HelloConcept, Ware$TextElementNode, Ware$Execute {
 
 	String nodeName;
 	
@@ -36,11 +36,11 @@ public class HelloEntity implements Ware$Entity, HelloConcept, Ware$TextElement,
 		hello();
 	}
 
-	public List<Ware$Attribute> getAttributes() {
+	public List<Ware$AttributeNode> getAttributes() {
 		return null;
 	}
 
-	public Ware$Text getTextNode() {
+	public Ware$TextNode getTextNode() {
 		return null;
 	}
 
@@ -72,6 +72,11 @@ public class HelloEntity implements Ware$Entity, HelloConcept, Ware$TextElement,
 	}
 
 	public void afterBuildDo() {
+		
+	}
+
+	public void setNode(Ware$Node node) {
+		// TODO Auto-generated method stub
 		
 	}
 }

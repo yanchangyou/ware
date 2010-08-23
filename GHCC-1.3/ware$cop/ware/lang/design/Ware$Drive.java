@@ -1,6 +1,6 @@
 package ware.lang.design;
 
-import org.cop.Drive;
+import org.cop.norm.Drive;
 
 /**
  * 驱动概念在CPU上执行
@@ -9,7 +9,7 @@ import org.cop.Drive;
  * @version 1.2.0
  *
  */
-public interface WareDrive extends Drive {
+public interface Ware$Drive extends Drive {
 
 	/**
 	 * 在CPU上面执行驱动执行

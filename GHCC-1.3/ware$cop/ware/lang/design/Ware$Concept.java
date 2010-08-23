@@ -1,6 +1,6 @@
 package ware.lang.design;
 
-import org.cop.Concept;
+import org.cop.norm.Concept;
 
 
 /**
@@ -19,7 +19,7 @@ import org.cop.Concept;
  * @version 1.2.0
  *
  */
-public interface WareConcept extends Concept {
+public interface Ware$Concept extends Concept {
 
 	/**
 	 * 获取名称

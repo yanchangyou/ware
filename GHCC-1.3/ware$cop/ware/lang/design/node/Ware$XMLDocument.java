@@ -9,7 +9,7 @@ package ware.lang.design.node;
  * @version 1.1.0
  *
  */
-public interface XMLDocument extends Element {
+public interface Ware$XMLDocument extends Ware$Element {
 
 	/**
 	 * 获取xml文档版本
@@ -27,5 +27,5 @@ public interface XMLDocument extends Element {
 	 * 获取根元素
 	 * @return 根元素
 	 */
-	public Element getRootElement();
+	public Ware$Element getRootElement();
 }

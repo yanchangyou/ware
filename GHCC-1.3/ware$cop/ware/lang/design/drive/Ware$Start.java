@@ -1,6 +1,6 @@
 package ware.lang.design.drive;
 
-import ware.lang.design.WareDrive;
+import ware.lang.design.Ware$Drive;
 
 /**
  * 启动服务
@@ -9,7 +9,7 @@ import ware.lang.design.WareDrive;
  * @version 1.2.0
  *
  */
-public interface Start extends WareDrive {
+public interface Ware$Start extends Ware$Drive {
 
 	/**
 	 * 启动服务

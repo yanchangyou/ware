@@ -1,4 +1,6 @@
-package org.cop;
+package org.cop.norm;
+
+import org.cop.COP;
 
 
 /**
@@ -11,4 +13,4 @@ package org.cop;
  * @version 1.3.0
  *
  */
-public interface Concept {}
+public interface Concept extends COP {}

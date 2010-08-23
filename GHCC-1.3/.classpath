@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="cop-ware"/>
+	<classpathentry kind="src" path="demo"/>
+	<classpathentry kind="src" path="cop"/>
+	<classpathentry kind="src" path="cop-ware-ether"/>
+	<classpathentry kind="src" path="cop-ware-ether-GHCC"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.5.0_22"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

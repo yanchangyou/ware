@@ -1,8 +1,6 @@
 package ware.lang.impl.ether.defaults.node;
 
-import java.util.List;
-
-import ware.lang.design.Ware$Node;
+import ware.lang.impl.ether.abstracts.node.Ether$Ware$AbstractElementNode;
 
 /**
  * 元素 : 可以包含子节点的节点
@@ -11,23 +9,15 @@ import ware.lang.design.Ware$Node;
  * @version 1.1.0
  *
  */
-public class Ether$Ware$DefaultElementNode extends Ether$Ware$DefaultNode {
-	
-	/**
-	 * 获取所有属性节点
-	 * @return 所有属性节点
-	 */
-	public List<Ether$Ware$Attribute> getAttributes();
-	
-	/**
-	 * 获取子元素
-	 * @return 子元素
-	 */
-	public List<Ether$Ware$DefaultElementNode> getSubElements();
-	
-	/**
-	 * 获取标签名称
-	 * @return 标签名称
-	 */
-	public String getTagName();
+public class Ether$Ware$DefaultElementNode extends Ether$Ware$AbstractElementNode {
+
+	public void check(String nodeString) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void parse(String nodeString) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
 }

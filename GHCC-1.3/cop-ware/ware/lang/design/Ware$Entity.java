@@ -23,20 +23,10 @@ public interface Ware$Entity extends Entity {
 	public void build();
 	
 	/**
-	 * 获取节点来构建实体
-	 */
-	public Ware$Node getNode();
-	
-	/**
-	 * 设置节点
-	 */
-	public void setNode(Ware$Node node);
-	
-	/**
 	 * 是否需要在构建之前做什么
 	 * @return
 	 */
-	public boolean needBeforeBuildDo();
+	public boolean needDoBeforeBuild();
 	
 	/**
 	 * 在构建之前需要做什么
@@ -48,7 +38,7 @@ public interface Ware$Entity extends Entity {
 	 * 是否需要在构建之后做什么
 	 * @return
 	 */
-	public boolean needAfterBuildDo();
+	public boolean needDoAfterBuild();
 	
 	/**
 	 * 在构建之后需要做什么

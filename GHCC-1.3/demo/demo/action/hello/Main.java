@@ -47,13 +47,16 @@ public class Main {
 		
 		Object obj = Class.forName(entityClassName).newInstance();
 		
+		Ware$Node node = (Ware$Node) obj;
+
+		String nodeXML = wareRootElement.asXML();
+		node.check(nodeXML);
+		node.parse(nodeXML);
+		
 		Ware$Entity entity = (Ware$Entity) obj;
 		
-		Ware$Node node = null;
-		entity.setNode(node);
-
 		//构建之前
-		if(entity.needBeforeBuildDo()) {
+		if(entity.needDoBeforeBuild()) {
 			entity.beforeBuildDo();
 		}
 		
@@ -61,10 +64,9 @@ public class Main {
 		entity.build();
 		
 		//构建之后
-		if(entity.needAfterBuildDo()) {
+		if(entity.needDoAfterBuild()) {
 			entity.afterBuildDo();
 		}
-		
 	}
 	
 	public static Element getRootElement(String path) throws DocumentException {

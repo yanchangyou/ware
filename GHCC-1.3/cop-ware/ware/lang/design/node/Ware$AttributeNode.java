@@ -16,11 +16,4 @@ public interface Ware$AttributeNode extends Ware$Node {
 	 * @return 值
 	 */
 	public String getValue();
-	
-	/**
-	 * 设置值
-	 * @param value
-	 */
-	public void setValue(String value);
-	
 }

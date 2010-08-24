@@ -11,4 +11,13 @@ import ware.lang.impl.ether.abstracts.node.Ether$Ware$AbstractTextNode;
  */
 public class Ether$Ware$DefaultTextNode extends Ether$Ware$AbstractTextNode {
 
+	public void check(String nodeString) throws Exception {
+		if (nodeString == null) {
+			throw new NullPointerException();
+		}
+	}
+
+	public void parse(String textContent) {
+		this.textContent = textContent;
+	}
 }

@@ -1,6 +1,6 @@
 package ware.lang.impl.ether.defaults.node;
 
-import ware.lang.design.Ware$Node;
+import ware.lang.impl.ether.abstracts.node.Ether$Ware$AbstractCommentNode;
 
 /**
  * 注释
@@ -9,11 +9,16 @@ import ware.lang.design.Ware$Node;
  * @version 1.1.0
  *
  */
-public class Ether$Ware$DefaultCommentNode extends Ether$Ware$DefaultNode {
+public class Ether$Ware$DefaultCommentNode extends Ether$Ware$AbstractCommentNode {
 
-	/**
-	 * 获取注释
-	 * @return 注释
-	 */
-	public String getComment();
+	public void check(String nodeString) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void parse(String nodeString) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

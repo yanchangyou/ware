@@ -10,23 +10,15 @@ import ware.lang.impl.ether.abstracts.Ether$Ware$AbstractNode;
  * @version 1.1.0
  *
  */
-public class Ether$Ware$AbstractTextNode extends Ether$Ware$AbstractNode implements Ware$TextNode {
+public abstract class Ether$Ware$AbstractTextNode extends Ether$Ware$AbstractNode implements Ware$TextNode {
 
-	protected String textContext;
+	protected String textContent;
 	
 	/**
 	 * 获取文本内容
 	 * @return
 	 */
-	public String getTextContext() {
-		return textContext;
-	}
-
-	public void check() {}
-
-	public void parse() {}
-
-	public void setTextContext(String textContext) {
-		this.textContext = textContext;
+	public String getTextContent() {
+		return textContent;
 	}
 }

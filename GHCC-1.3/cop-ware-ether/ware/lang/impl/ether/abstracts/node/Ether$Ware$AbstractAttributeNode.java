@@ -20,22 +20,4 @@ public abstract class Ether$Ware$AbstractAttributeNode extends Ether$Ware$Abstra
 	public String getValue() {
 		return value;
 	}
-	
-	/**
-	 * 设置值
-	 * @param value
-	 */
-	public void setValue(String value) {
-		this.value = value;
-	}
-
-	public void check() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void parse() {
-		// TODO Auto-generated method stub
-		
-	}
 }

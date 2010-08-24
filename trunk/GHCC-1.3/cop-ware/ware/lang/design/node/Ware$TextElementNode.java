@@ -20,10 +20,11 @@ public interface Ware$TextElementNode extends Ware$Node {
 	public List<Ware$AttributeNode> getAttributes();
 	
 	/**
-	 * 设置属性节点
-	 * @param attributes
+	 * 按照属性名称提取属性
+	 * @param attributeName
+	 * @return
 	 */
-	public void setAttributes(List<Ware$AttributeNode> attributes);
+	public Ware$AttributeNode getAttributeByName(String attributeName);
 	
 	/**
 	 * 获取文本元素
@@ -32,21 +33,9 @@ public interface Ware$TextElementNode extends Ware$Node {
 	public Ware$TextNode getTextNode();
 	
 	/**
-	 * 设置文本元素
-	 * @param textNode
-	 */
-	public void setTextNode(Ware$TextNode textNode);
-	
-	
-	/**
 	 * 获取标签名称
 	 * @return 标签名称
 	 */
 	public String getTagName();
 
-	/**
-	 * 设置标签名称
-	 * @param name
-	 */
-	public void setTagName(String name);
 }

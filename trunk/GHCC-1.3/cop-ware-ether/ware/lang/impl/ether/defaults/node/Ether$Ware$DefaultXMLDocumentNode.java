@@ -1,5 +1,8 @@
 package ware.lang.impl.ether.defaults.node;
 
+import ware.lang.design.node.Ware$ElementNode;
+import ware.lang.impl.ether.abstracts.node.Ether$Ware$AbstractNamespaceNode;
+
 
 /**
  * xml文档<br>
@@ -9,23 +12,25 @@ package ware.lang.impl.ether.defaults.node;
  * @version 1.1.0
  *
  */
-public class Ether$Ware$DefaultXMLDocumentNode extends Ether$Ware$DefaultNode {
-
-	/**
-	 * 获取xml文档版本
-	 * @return xml文档版本
-	 */
-	public String getVersion();
+public class Ether$Ware$DefaultXMLDocumentNode extends Ether$Ware$AbstractNamespaceNode {
 	
-	/**
-	 * 获取xml编码
-	 * @return xml编码
-	 */
-	public String getEncoding();
+	Ware$ElementNode elementNode;
 	
 	/**
 	 * 获取根元素
 	 * @return 根元素
 	 */
-	public Ether$Ware$DefaultElementNode getRootElement();
+	public Ware$ElementNode getRootElement() {
+		return elementNode;
+	}
+
+	public void check(String nodeString) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void parse(String nodeString) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
 }

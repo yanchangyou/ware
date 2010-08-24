@@ -18,8 +18,4 @@ public abstract class Ether$Ware$AbstractNode implements Ware$Node {
 	public String getNodeName() {
 		return nodeName;
 	}
-
-	public void setNodeName(String nodeName) {
-		this.nodeName = nodeName;
-	}
 }

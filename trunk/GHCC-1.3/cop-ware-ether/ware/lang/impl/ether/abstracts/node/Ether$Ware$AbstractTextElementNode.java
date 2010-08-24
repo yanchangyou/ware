@@ -1,10 +1,11 @@
 package ware.lang.impl.ether.abstracts.node;
 
+import java.util.Iterator;
 import java.util.List;
 
 import ware.lang.design.node.Ware$AttributeNode;
-import ware.lang.design.node.Ware$TextNode;
 import ware.lang.design.node.Ware$TextElementNode;
+import ware.lang.design.node.Ware$TextNode;
 import ware.lang.impl.ether.abstracts.Ether$Ware$AbstractNode;
 
 /**
@@ -14,7 +15,7 @@ import ware.lang.impl.ether.abstracts.Ether$Ware$AbstractNode;
  * @version 1.1.0
  *
  */
-public class Ether$Ware$AbstractTextElementNode extends Ether$Ware$AbstractNode implements Ware$TextElementNode {
+public abstract class Ether$Ware$AbstractTextElementNode extends Ether$Ware$AbstractNode implements Ware$TextElementNode {
 	
 	protected List<Ware$AttributeNode> attributes;
 	protected Ware$TextNode text;
@@ -26,10 +27,20 @@ public class Ether$Ware$AbstractTextElementNode extends Ether$Ware$AbstractNode 
 	public List<Ware$AttributeNode> getAttributes() {
 		return attributes;
 	}
-	
 
-	public void setAttributes(List<Ware$AttributeNode> attributes) {
-		this.attributes = attributes;
+	/**
+	 * 按照属性名称提取属性
+	 * @param attributeName
+	 * @return
+	 */
+	public Ware$AttributeNode getAttributeByName(String attributeName) {
+		for (Iterator iterator = attributes.iterator(); iterator.hasNext();) {
+			Ware$AttributeNode attributeNode = (Ware$AttributeNode) iterator.next();
+			if(attributeNode.getNodeName().equals(attributeName)) {
+				return attributeNode;
+			}
+		}
+		return null;
 	}
 	
 	/**
@@ -40,28 +51,7 @@ public class Ether$Ware$AbstractTextElementNode extends Ether$Ware$AbstractNode 
 		return text;
 	}
 	
-
-	public void setTextNode(Ware$TextNode text) {
-		this.text = text;
-		
-	}
-	
-
-	public void check() {
-		
-	}
-
-	public void parse() {
-		
-	}
-
-
 	public String getTagName() {
 		return this.getNodeName();
-	}
-
-
-	public void setTagName(String name) {
-		this.setNodeName(name);
 	}
 }

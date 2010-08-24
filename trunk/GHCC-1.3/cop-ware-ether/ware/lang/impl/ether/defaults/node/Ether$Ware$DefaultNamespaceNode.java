@@ -1,6 +1,6 @@
 package ware.lang.impl.ether.defaults.node;
 
-import ware.lang.design.Ware$Node;
+import ware.lang.impl.ether.abstracts.node.Ether$Ware$AbstractNamespaceNode;
 
 /**
  * 命名空间
@@ -9,17 +9,15 @@ import ware.lang.design.Ware$Node;
  * @version 1.1.0
  *
  */
-public class Ether$Ware$DefaultNamespaceNode extends Ether$Ware$DefaultNode {
+public class Ether$Ware$DefaultNamespaceNode extends Ether$Ware$AbstractNamespaceNode {
 
-	/**
-	 * 名称空间前缀
-	 * @return 空间前缀
-	 */
-	public String getPrefix();
-	
-	/**
-	 * 获取对应的url
-	 * @return 对应的url
-	 */
-	public String getNamespaceURL();
+	public void check(String nodeString) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void parse(String nodeString) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
 }

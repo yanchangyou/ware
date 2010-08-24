@@ -15,10 +15,5 @@ public interface Ware$TextNode extends Ware$Node {
 	 * 获取文本内容
 	 * @return
 	 */
-	public String getTextContext();
-	
-	/**
-	 * 设置文本内容
-	 */
-	public void setTextContext(String textContext);
+	public String getTextContent();
 }

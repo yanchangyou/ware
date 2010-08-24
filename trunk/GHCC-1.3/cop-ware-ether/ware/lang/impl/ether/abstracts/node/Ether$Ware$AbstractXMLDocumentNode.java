@@ -1,5 +1,8 @@
 package ware.lang.impl.ether.abstracts.node;
 
+import ware.lang.design.node.Ware$XMLDocumentNode;
+import ware.lang.impl.ether.abstracts.Ether$Ware$AbstractNode;
+
 
 /**
  * xml文档<br>
@@ -9,23 +12,23 @@ package ware.lang.impl.ether.abstracts.node;
  * @version 1.1.0
  *
  */
-public class Ether$Ware$AbstractXMLDocumentNode extends Ether$Ware$DefaultNode {
+public abstract class Ether$Ware$AbstractXMLDocumentNode extends Ether$Ware$AbstractNode implements Ware$XMLDocumentNode {
 
+	protected String version;
+	protected String encoding;
 	/**
 	 * 获取xml文档版本
 	 * @return xml文档版本
 	 */
-	public String getVersion();
+	public String getVersion() {
+		return version;
+	}
 	
 	/**
 	 * 获取xml编码
 	 * @return xml编码
 	 */
-	public String getEncoding();
-	
-	/**
-	 * 获取根元素
-	 * @return 根元素
-	 */
-	public Ether$Ware$AbstractElementNode getRootElement();
+	public String getEncoding() {
+		return encoding;
+	}
 }

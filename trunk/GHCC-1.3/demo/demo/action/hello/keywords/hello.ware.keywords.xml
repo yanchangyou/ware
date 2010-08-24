@@ -2,10 +2,6 @@
 
 <ware type="keywords">
 	<keywords>
-		<keyword 	name="hello"
-					conceptClass="demo.action.hello.concept.HelloConcept" 
-					entityClass="demo.action.hello.entity.HelloEntity"
-					>
-		</keyword>
+		<keyword name="hello" conceptClass="demo.action.hello.concept.HelloConcept" entityClass="demo.action.hello.entity.HelloEntity"/>
 	</keywords>
 </ware>

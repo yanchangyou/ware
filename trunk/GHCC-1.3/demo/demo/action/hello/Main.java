@@ -55,8 +55,9 @@ public class Main {
 		
 		Ware$Entity entity = (Ware$Entity) obj;
 		
+		//TODO 此处要注意， 不能needDoBeforeBuild()和beforeBuildDo()不能以来build
 		//构建之前
-		if(entity.needDoBeforeBuild()) {
+		if(entity.needDoBeforeBuild()) { 
 			entity.beforeBuildDo();
 		}
 		

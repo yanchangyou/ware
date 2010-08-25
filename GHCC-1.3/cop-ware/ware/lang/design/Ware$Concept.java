@@ -19,7 +19,7 @@ import org.cop.norm.Concept;
  * @version 1.2.0
  *
  */
-public interface Ware$Concept extends Concept {
+public interface Ware$Concept extends Ware, Concept {
 
 	/**
 	 * 获取名称
@@ -32,5 +32,5 @@ public interface Ware$Concept extends Concept {
 	 * @return 描述
 	 */
 	public String getConceptDescription();
-	
+
 }

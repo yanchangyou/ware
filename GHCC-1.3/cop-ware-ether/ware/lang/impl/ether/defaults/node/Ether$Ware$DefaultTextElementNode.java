@@ -15,14 +15,17 @@ import ware.lang.impl.ether.abstracts.node.Ether$Ware$AbstractTextElementNode;
 
 /**
  * 子元素只有一个并且是文本
+ * 
  * @author yanchangyou
  * @date 2010-8-21 23:50:18
  * @version 1.1.0
- *
+ * 
  */
-public class Ether$Ware$DefaultTextElementNode extends Ether$Ware$AbstractTextElementNode {
-	
+public class Ether$Ware$DefaultTextElementNode extends
+		Ether$Ware$AbstractTextElementNode {
+
 	protected Element dom4jElement;
+
 	public void check(String nodeString) throws Exception {
 		DocumentHelper.parseText(nodeString);
 	}
@@ -32,15 +35,15 @@ public class Ether$Ware$DefaultTextElementNode extends Ether$Ware$AbstractTextEl
 		try {
 			document = DocumentHelper.parseText(nodeString);
 		} catch (DocumentException e) {
-			//can't occur, because check() method check this
-		} 
-		
+			// can't occur, because check() method check this
+		}
+
 		dom4jElement = document.getRootElement();
 
-		//自身节点
+		// 自身节点
 		this.nodeName = dom4jElement.getName();
-		
-		//属性节点
+
+		// 属性节点
 		List list = dom4jElement.attributes();
 		attributes = new ArrayList<Ware$AttributeNode>(list.size());
 		for (Iterator iterator = list.iterator(); iterator.hasNext();) {
@@ -51,11 +54,11 @@ public class Ether$Ware$DefaultTextElementNode extends Ether$Ware$AbstractTextEl
 			attributeNode.parse(attributeXML);
 			attributes.add(attributeNode);
 		}
-		//文本节点
+		// 文本节点
 		text = new Ether$Ware$DefaultTextNode();
 		String textContent = dom4jElement.getText();
 		text.check(textContent);
 		text.parse(textContent);
 	}
-	
+
 }

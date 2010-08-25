@@ -9,7 +9,7 @@ import ware.lang.design.Ware$Drive;
  * @author yanchangyou
  * @date 2010-8-22 23:28:22
  * @version 1.2.0
- *
+ * 
  */
 public interface Ware$Run extends Ware$Drive {
 

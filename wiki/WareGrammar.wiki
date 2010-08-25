@@ -1,0 +1,11 @@
+#ware语言的语法定义
+
+= 语法 =
+
+
+==执行==
+
+格式如下:
+{{{
+     java -jar ether.ware.jar {ware.xml.path}?name1=value1&name2=value2
+}}}

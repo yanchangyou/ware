@@ -2,7 +2,6 @@ package org.cop.norm;
 
 import org.cop.COP;
 
-
 /**
  * 概念(concept) : 面向概念编程的起点<br>
  * <br>
@@ -11,6 +10,7 @@ import org.cop.COP;
  * @author yanchangyou
  * @date 2010-08-22 23:59:21
  * @version 1.3.0
- *
+ * 
  */
-public interface Concept extends COP {}
+public interface Concept extends COP {
+}

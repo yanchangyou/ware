@@ -22,6 +22,6 @@ public class Ether$Ware$DefaultAttributeNode extends
 	public void parse(String nodeString) throws Exception {
 		String[] nameValue = nodeString.split("=");
 		this.nodeName = nameValue[0];
-		this.value = nameValue[1].substring(1,nameValue[1].length()-1);
+		this.value = nameValue[1].substring(1, nameValue[1].length() - 1);
 	}
 }

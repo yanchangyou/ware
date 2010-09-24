@@ -9,7 +9,7 @@ public class A_Mod_B_Model extends A_Op_B_Model {
 	}
 	public void a_op_b() throws Exception {
 		if (b == 0) {
-			throw new Exception("b²»ÄÜÎªÁã");
+			throw new Exception("bä¸èƒ½ä¸ºé›¶");
 		}
 		result = a % b;
 	}

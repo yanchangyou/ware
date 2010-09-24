@@ -2,7 +2,7 @@ package test.calcu.pioneer.version1.process;
 
 import java.util.Scanner;
 
-//ÃæÏò¹ı³Ì±à³Ìdemo--a+b
+//é¢å‘è¿‡ç¨‹ç¼–ç¨‹demo--a+b
 
 
 class A_Add_B_View {
@@ -85,7 +85,7 @@ public class Drive {
 
 
 /**
- * ¹¤¾ßÀà
+ * å·¥å…·ç±»
  * @author yanchangyou
  *
  */

@@ -1,17 +1,17 @@
 package test.calcu.pave.concept;
 /*=========================*\
-step 1 : Ìá³ö¸ÅÄî  a ÔËËã  b
+step 1 : æå‡ºæ¦‚å¿µ  a è¿ç®—  b
 \*=========================*/
 public interface A_Op_B_Concept {
 	/**
-	 * aÔËËãb
-	 * @return aÔËËãbµÄÖµ
+	 * aè¿ç®—b
+	 * @return aè¿ç®—bçš„å€¼
 	 * @throws Exception 
 	 */
 	void a_op_b() throws Exception;
 	
 	/**
-	 * ´¦ÀíÒì³£
+	 * å¤„ç†å¼‚å¸¸
 	 * @param e 
 	 */
 	void dealException(Exception e) throws Exception;

@@ -9,7 +9,7 @@ public class A_Divide_B_Model extends A_Op_B_Model {
 	}
 	public void a_op_b() throws Exception {
 		if (a % b != 0) {
-			throw new Exception("²»ÄÜÕû³ı");
+			throw new Exception("ä¸èƒ½æ•´é™¤");
 		}
 		result = a / b;
 	}

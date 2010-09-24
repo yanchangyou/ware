@@ -3,7 +3,7 @@ package test.calcu.pave.entity.abstracts.model;
 import test.calcu.pave.concept.A_Op_B_Concept;
 
 /**
- *模型实体
+ *妯″瀷瀹炰綋
  */
 public abstract class A_Op_B_Model implements A_Op_B_Concept {
 

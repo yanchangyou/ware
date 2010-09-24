@@ -13,6 +13,6 @@ public class A_Add_B_Model extends A_Op_B_Model {
 	}
 
 	public void dealException(Exception e) {
-		this.exceptionMessage = "²»¿ÉÄÜ·¢Éú";
+		this.exceptionMessage = "ä¸å¯èƒ½å‘ç”Ÿ";
 	}
 }

@@ -12,6 +12,6 @@ public class A_Subtract_B_Model extends A_Op_B_Model {
 	}
 
 	public void dealException(Exception e) {
-		this.exceptionMessage = "²»¿ÉÄÜ·¢Éú";
+		this.exceptionMessage = "ä¸å¯èƒ½å‘ç”Ÿ";
 	}
 }

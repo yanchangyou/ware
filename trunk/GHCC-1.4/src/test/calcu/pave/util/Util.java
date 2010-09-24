@@ -3,7 +3,7 @@ package test.calcu.pave.util;
 import java.util.Scanner;
 
 /**
- * ¹¤¾ßÀà
+ * å·¥å…·ç±»
  * @author yanchangyou
  *
  */
@@ -15,7 +15,7 @@ public class Util {
 		try {
 			result = scanner.nextInt();
 		} catch (Exception e) {
-			System.out.println("ÊäÈëÕûÊı´íÎó£¬ÖØĞ´ÊäÈë");
+			System.out.println("è¾“å…¥æ•´æ•°é”™è¯¯ï¼Œé‡å†™è¾“å…¥");
 			result = readInt(msg);
 		}
 		return result;

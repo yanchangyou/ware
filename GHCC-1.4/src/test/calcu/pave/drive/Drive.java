@@ -1,5 +1,7 @@
 package test.calcu.pave.drive;
 
+import java.io.IOException;
+
 import test.calcu.pave.entity.defaults.view.A_Op_B_View;
 
 
@@ -10,8 +12,11 @@ import test.calcu.pave.entity.defaults.view.A_Op_B_View;
 \*=========================================*/
 public class Drive {
 
-	A_Op_B_View view = new A_Op_B_View();
+	A_Op_B_View view;
 
+	public Drive() throws IOException {
+		view = new A_Op_B_View();
+	}
 	public void drive() {
 		for (int i=0; ; i++) {
 			System.out.println("=============================");

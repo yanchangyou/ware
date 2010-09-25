@@ -16,7 +16,7 @@ import test.calcu.pave.util.Util;
 public class A_Op_B_View implements A_Op_B_Concept {
 
 	/**
-	 * ÊÓÍ¼¿ÉÑ¡ÓÃµÄÊµÌåÄ£ĞÍ +¡¢-¡¢*¡¢%/
+	 * è§†å›¾å¯é€‰ç”¨çš„å®ä½“æ¨¡å‹ +ã€-ã€*ã€%/
 	 */
 	Map<String, A_Op_B_Model> opMap = new HashMap<String, A_Op_B_Model>();
 
@@ -35,7 +35,7 @@ public class A_Op_B_View implements A_Op_B_Concept {
 	}
 
 	
-	A_Op_B_Model model; //ÊÓÍ¼Ê¹ÓÃÒ»¸öÄ£ĞÍ
+	A_Op_B_Model model; //è§†å›¾ä½¿ç”¨ä¸€ä¸ªæ¨¡å‹
 	
 	public void readA() {
 		int num = Util.readInt("a = ");
@@ -51,12 +51,12 @@ public class A_Op_B_View implements A_Op_B_Concept {
 		String op = Util.readString("op = ");
 		model = opMap.get(op);
 		if (model == null) {
-			throw new Exception("²»Ê¶±ğµÄÔËËã·û[" + op + "]£¬ ¿ÉÒÔµÄÔËËã·ûÈçÏÂ£º " + opMap.keySet());
+			throw new Exception("ä¸è¯†åˆ«çš„è¿ç®—ç¬¦[" + op + "]ï¼Œ å¯ä»¥çš„è¿ç®—ç¬¦å¦‚ä¸‹ï¼š " + opMap.keySet());
 		}
 	}
 	
 	/**
-	 * ÊÓÍ¼µÄ¼ÆËã£¬ ÒÀÀµÓÚÄ£ĞÍµÄ¼ÆËã
+	 * è§†å›¾çš„è®¡ç®—ï¼Œ ä¾èµ–äºæ¨¡å‹çš„è®¡ç®—
 	 * @throws Exception 
 	 */
 	public void a_op_b() throws Exception {

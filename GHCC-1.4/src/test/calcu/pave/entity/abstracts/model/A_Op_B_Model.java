@@ -57,4 +57,8 @@ public abstract class A_Op_B_Model implements A_Op_B_Concept {
 	}
 
 	public abstract void a_op_b() throws Exception;
+	
+	public String toString() {
+		return a + " " + operatorSymbol + " " + b + " = " + result + " [" + exceptionMessage + "]";
+	}
 }

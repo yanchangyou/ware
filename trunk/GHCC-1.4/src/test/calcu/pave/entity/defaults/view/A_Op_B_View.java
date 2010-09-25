@@ -1,16 +1,14 @@
 package test.calcu.pave.entity.defaults.view;
 
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import test.calcu.pave.concept.A_Op_B_Concept;
 import test.calcu.pave.entity.abstracts.model.A_Op_B_Model;
-import test.calcu.pave.entity.defaults.model.A_Add_B_Model;
-import test.calcu.pave.entity.defaults.model.A_Divide_B_Model;
-import test.calcu.pave.entity.defaults.model.A_Exponential_B_Model;
-import test.calcu.pave.entity.defaults.model.A_Mod_B_Model;
-import test.calcu.pave.entity.defaults.model.A_Multiply_B_Model;
-import test.calcu.pave.entity.defaults.model.A_Subtract_B_Model;
+import test.calcu.pave.util.ModelUtil;
 import test.calcu.pave.util.Util;
 
 public class A_Op_B_View implements A_Op_B_Concept {
@@ -18,20 +16,34 @@ public class A_Op_B_View implements A_Op_B_Concept {
 	/**
 	 * 视图可选用的实体模型 +、-、*、%/
 	 */
-	Map<String, A_Op_B_Model> opMap = new HashMap<String, A_Op_B_Model>();
+	Map<String, A_Op_B_Model> opMap;
 
-	{
-		A_Op_B_Model[] models = new A_Op_B_Model[]{
-				new A_Add_B_Model(),
-				new A_Subtract_B_Model(),
-				new A_Multiply_B_Model(),
-				new A_Divide_B_Model(),
-				new A_Mod_B_Model(),
-				new A_Exponential_B_Model()
-		};
-		for (int i = 0; i < models.length; i++) {
-			opMap.put(models[i].getOperatorSymbol(), models[i]);
+	public A_Op_B_View() throws IOException {
+		opMap = new HashMap<String, A_Op_B_Model>();
+		init();
+	}
+	private void init() throws IOException {
+		String packageName = "test.calcu.pave.entity.defaults.model";
+		List<A_Op_B_Model> modelList = ModelUtil.readAllModelByPackageName(packageName);
+		for (Iterator<A_Op_B_Model> it = modelList.iterator(); it.hasNext();) {
+			A_Op_B_Model a_Op_B_Model = it.next();
+			opMap.put(a_Op_B_Model.getOperatorSymbol(), a_Op_B_Model);
 		}
+	}
+	{
+//		A_Op_B_Model[] models = new A_Op_B_Model[]{
+//				new A_Add_B_Model(),
+//				new A_Subtract_B_Model(),
+//				new A_Multiply_B_Model(),
+//				new A_Divide_B_Model(),
+//				new A_Mod_B_Model(),
+//				new A_Exponential_B_Model()
+//		};
+//		for (int i = 0; i < models.length; i++) {
+//			opMap.put(models[i].getOperatorSymbol(), models[i]);
+//		}
+		
+		
 	}
 
 	

@@ -93,7 +93,9 @@ public class ModelUtil<T> {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 		String fileName = reader.readLine();
 		while (fileName != null) {
-			fileURLList.add(fileName);
+			if (fileName.indexOf(".class") != -1) { //只提前类文件
+				fileURLList.add(fileName);
+			}
 			fileName = reader.readLine();
 		}
 		in.close();

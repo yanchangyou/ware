@@ -37,6 +37,7 @@
     			<attribute name="Main-Class" value="ware.core.boot.Boot"/>
     		</manifest>
     	</jar>
+    	<delete dir="${classes}/.."/>
     </target>
 
 </project>

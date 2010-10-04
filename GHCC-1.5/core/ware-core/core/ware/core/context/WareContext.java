@@ -1,4 +1,4 @@
-package ware.core;
+package ware.core.context;
 
 import java.util.HashMap;
 import java.util.Map;

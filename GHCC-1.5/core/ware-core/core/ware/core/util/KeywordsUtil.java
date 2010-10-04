@@ -11,8 +11,8 @@ import org.dom4j.Namespace;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
-import ware.core.Driver;
-import ware.core.WareContext;
+import ware.core.context.WareContext;
+import ware.core.drive.Driver;
 import ware.core.exception.WareNoKeywordsFoundException;
 import ware.core.keywords.WareKeywordsDocument;
 

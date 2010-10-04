@@ -1,4 +1,4 @@
-package ware.lang;
+package ware.core;
 
 import java.util.Map;
 

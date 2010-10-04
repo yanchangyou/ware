@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<keywords>
+	<class-path-list>
+		<class-path>http://127.0.0.1:9999/helloworld-ware/classes/</class-path>
+	</class-path-list>
+	<keyword name="System" class-name="demo.helloworld.java.System"/>
+	<keyword name="out" class-name="demo.helloworld.java.Out"/>
+	<keyword name="println" class-name="demo.helloworld.java.Println"/>
+	<keyword name="print" class-name="demo.helloworld.java.Print"/>
+	<keyword name="system-out-println" class-name="demo.helloworld.java.Println"/>
+	<keyword name="s-o-p" class-name="demo.helloworld.java.Println"/>
+</keywords>

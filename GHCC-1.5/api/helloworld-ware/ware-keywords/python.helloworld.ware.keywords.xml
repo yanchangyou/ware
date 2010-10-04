@@ -3,6 +3,7 @@
 <keywords>
 	<class-path-list>
 		<class-path>http://127.0.0.1:9999/helloworld-ware/classes/</class-path>
+		<class-path>https://wareware.googlecode.com/svn/trunk/GHCC-1.5/api/helloworld-ware/classes/</class-path>
 	</class-path-list>
 	<keyword name="sys" class-name="demo.helloworld.python.Sys"/>
 	<keyword name="stdout" class-name="demo.helloworld.python.StdOut"/>

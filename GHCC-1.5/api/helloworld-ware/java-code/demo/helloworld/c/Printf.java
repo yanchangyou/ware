@@ -2,7 +2,7 @@ package demo.helloworld.c;
 
 import org.dom4j.Element;
 
-import ware.core.WareContext;
+import ware.core.context.WareContext;
 import ware.core.exception.WareException;
 import ware.core.node.WareElement;
 import demo.helloworld.AbstractHellWorld;

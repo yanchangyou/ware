@@ -1,6 +1,6 @@
 package demo.helloworld.java;
 
-import ware.core.WareContext;
+import ware.core.context.WareContext;
 import ware.core.exception.WareException;
 import ware.core.node.WareElement;
 import demo.helloworld.AbstractHellWorld;

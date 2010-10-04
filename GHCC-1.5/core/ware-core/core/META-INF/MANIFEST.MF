@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+GHCC-1.5
+ware-0.1
+date:2010-10-5 3:15:34
+Main-Class: ware.core.boot.Boot

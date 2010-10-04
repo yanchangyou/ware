@@ -3,6 +3,7 @@
 <keywords>
 	<class-path-list>
 		<class-path>http://127.0.0.1:9999/helloworld-ware/classes/</class-path>
+		<class-path>https://wareware.googlecode.com/svn/trunk/GHCC-1.5/api/helloworld-ware/classes/</class-path>
 	</class-path-list>
 	<keyword name="std" class-name="demo.helloworld.cpp.Std"/>
 	<keyword name="out" class-name="demo.helloworld.cpp.Out"/>

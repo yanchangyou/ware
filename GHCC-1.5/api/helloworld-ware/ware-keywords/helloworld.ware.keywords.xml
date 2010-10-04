@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<keywords>
+	<class-path-list>
+		<class-path>http://127.0.0.1:9999/helloworld-ware/classes/</class-path>
+	</class-path-list>
+	<keyword name="helloworld" class-name="demo.helloworld.Helloworld"/>
+</keywords>

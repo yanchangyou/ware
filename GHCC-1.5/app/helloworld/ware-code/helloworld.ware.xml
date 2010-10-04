@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<helloworld 
+	
+	xmlns="http://127.0.0.1:9999/helloworld-ware/ware-keywords/helloworld.ware.keywords.xml"
+	
+	xmlns:c="http://127.0.0.1:9999/helloworld-ware/ware-keywords/c.helloworld.ware.keywords.xml"
+	xmlns:cpp="http://127.0.0.1:9999/helloworld-ware/ware-keywords/cpp.helloworld.ware.keywords.xml"
+	xmlns:java="http://127.0.0.1:9999/helloworld-ware/ware-keywords/java.helloworld.ware.keywords.xml"
+	xmlns:python="http://127.0.0.1:9999/helloworld-ware/ware-keywords/python.helloworld.ware.keywords.xml"
+	xmlns:ruby="http://127.0.0.1:9999/helloworld-ware/ware-keywords/ruby.helloworld.ware.keywords.xml"
+	xmlns:lisp="http://127.0.0.1:9999/helloworld-ware/ware-keywords/lisp.helloworld.ware.keywords.xml"
+	>
+	<!--  c language -->
+	<c:printf>
+		main() {
+		    printf("%s\r\n", "hello world!");
+		}
+	</c:printf>
+	
+	<!--  c++ language -->
+	<cpp:std>
+		<cpp:out>
+			<![CDATA[
+			
+				#include <iostream>
+				 
+				int main()
+				{
+				    std::cout << "Hello, World!" << std::endl;
+				    return 0;
+				}
+			
+			]]>
+		</cpp:out>
+	</cpp:std>
+	
+	<!--  java language -->
+	<java:System>
+		<java:out>
+			<java:println>
+				<![CDATA[
+					public class HelloWorld
+					{  
+					        public static void main(String args[])
+					        {
+					           System.out.println("Hello World!");
+					        }
+					}
+				]]>
+			</java:println>
+		</java:out>
+	</java:System>
+
+	<!--  ruby language -->
+	<ruby:puts>
+		<![CDATA[
+			puts 'Hello, World!'
+		]]>
+	</ruby:puts>
+	
+	<!--  lisp language -->
+	<lisp:write-line>
+		<![CDATA[
+			(format t "Hello, World!~%")
+		]]>
+	</lisp:write-line>
+	
+	<!--  python language -->
+	<python:sys-stdout-write>
+		<![CDATA[
+			print("Hello, World!")
+		]]>
+	</python:sys-stdout-write>
+</helloworld>

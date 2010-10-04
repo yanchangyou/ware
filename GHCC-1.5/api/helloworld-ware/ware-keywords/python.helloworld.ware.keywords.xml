@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<keywords>
+	<class-path-list>
+		<class-path>http://127.0.0.1:9999/helloworld-ware/classes/</class-path>
+	</class-path-list>
+	<keyword name="sys" class-name="demo.helloworld.python.Sys"/>
+	<keyword name="stdout" class-name="demo.helloworld.python.StdOut"/>
+	<keyword name="write" class-name="demo.helloworld.python.Write"/>
+	<keyword name="sys-stdout-write" class-name="demo.helloworld.python.Write"/>
+	<keyword name="s-s-w" class-name="demo.helloworld.python.Write"/>
+</keywords>

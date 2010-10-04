@@ -1,7 +1,7 @@
 package demo.helloworld;
 
-import ware.core.Driver;
-import ware.core.WareContext;
+import ware.core.context.WareContext;
+import ware.core.drive.Driver;
 import ware.core.exception.WareException;
 
 public abstract class AbstractHellWorld implements Driver {

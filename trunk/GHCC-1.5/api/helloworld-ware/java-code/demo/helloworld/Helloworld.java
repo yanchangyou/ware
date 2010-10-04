@@ -1,6 +1,6 @@
 package demo.helloworld;
 
-import ware.core.WareContext;
+import ware.core.context.WareContext;
 import ware.core.exception.WareException;
 
 public class Helloworld extends AbstractHellWorld {

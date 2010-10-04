@@ -1,6 +1,6 @@
 package demo.helloworld.python;
 
-import ware.core.WareContext;
+import ware.core.context.WareContext;
 import ware.core.exception.WareException;
 import demo.helloworld.AbstractHellWorld;
 

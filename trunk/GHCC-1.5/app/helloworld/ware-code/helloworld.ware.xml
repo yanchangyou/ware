@@ -2,14 +2,14 @@
 
 <helloworld 
 	
-	xmlns="http://127.0.0.1:9999/helloworld-ware/ware-keywords/helloworld.ware.keywords.xml"
+	xmlns="https://wareware.googlecode.com/svn/trunk/GHCC-1.5/api/helloworld-ware/ware-keywords/helloworld.ware.keywords.xml"
 	
-	xmlns:c="http://127.0.0.1:9999/helloworld-ware/ware-keywords/c.helloworld.ware.keywords.xml"
-	xmlns:cpp="http://127.0.0.1:9999/helloworld-ware/ware-keywords/cpp.helloworld.ware.keywords.xml"
-	xmlns:java="http://127.0.0.1:9999/helloworld-ware/ware-keywords/java.helloworld.ware.keywords.xml"
-	xmlns:python="http://127.0.0.1:9999/helloworld-ware/ware-keywords/python.helloworld.ware.keywords.xml"
-	xmlns:ruby="http://127.0.0.1:9999/helloworld-ware/ware-keywords/ruby.helloworld.ware.keywords.xml"
-	xmlns:lisp="http://127.0.0.1:9999/helloworld-ware/ware-keywords/lisp.helloworld.ware.keywords.xml"
+	xmlns:c="https://wareware.googlecode.com/svn/trunk/GHCC-1.5/api/helloworld-ware/ware-keywords/c.helloworld.ware.keywords.xml"
+	xmlns:cpp="https://wareware.googlecode.com/svn/trunk/GHCC-1.5/api/helloworld-ware/ware-keywords/cpp.helloworld.ware.keywords.xml"
+	xmlns:java="https://wareware.googlecode.com/svn/trunk/GHCC-1.5/api/helloworld-ware/ware-keywords/java.helloworld.ware.keywords.xml"
+	xmlns:python="https://wareware.googlecode.com/svn/trunk/GHCC-1.5/api/helloworld-ware/ware-keywords/python.helloworld.ware.keywords.xml"
+	xmlns:ruby="https://wareware.googlecode.com/svn/trunk/GHCC-1.5/api/helloworld-ware/ware-keywords/ruby.helloworld.ware.keywords.xml"
+	xmlns:lisp="https://wareware.googlecode.com/svn/trunk/GHCC-1.5/api/helloworld-ware/ware-keywords/lisp.helloworld.ware.keywords.xml"
 	>
 	<!--  c language -->
 	<c:printf>

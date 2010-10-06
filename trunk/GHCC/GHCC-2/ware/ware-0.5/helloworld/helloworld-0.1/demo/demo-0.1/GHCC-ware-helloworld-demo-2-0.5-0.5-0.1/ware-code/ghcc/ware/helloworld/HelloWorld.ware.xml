@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ghcc-ware-helloworld:speak-words xmlns:ghcc-ware-helloworld="https://wareware.googlecode.com/svn/trunk/GHCC/GHCC-2/ware/ware-0.5/helloworld/helloworld-0.1/keywords/keywords-0.1/GHCC-ware-helloworld-keywords-2-0.5-0.5-0.1/ghcc.ware.helloworld">
+Hello, World!
+</ghcc-ware-helloworld:speak-words>

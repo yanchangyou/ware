@@ -1,77 +1,94 @@
 package ghcc.ware.core.util;
 
-import ghcc.ware.core.context.WareContext;
 import ghcc.ware.core.drive.Driver;
-import ghcc.ware.core.exception.WareNoKeywordsFoundException;
-import ghcc.ware.core.keywords.WareKeywordsDocument;
 
-import java.io.InputStreamReader;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
-import java.util.List;
 
-import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.Namespace;
-import org.dom4j.Node;
-import org.dom4j.io.SAXReader;
 
-
+/**
+ * 处理keywords工具包
+ * @author yanchangyou
+ *
+ */
 public class KeywordsUtil {
 	
+	/**
+	 * 获取关键字对应的driver
+	 * @param element
+	 * @return
+	 * @throws Exception
+	 */
 	public static Driver getDriver(Element element) throws Exception {
+		
 		Namespace namespace = element.getNamespace();
-		WareKeywordsDocument keywordsDocument = getWareKeywordsDocument(namespace);
-		String tagName = element.getName();
 		
-		Node node = keywordsDocument.getRootElement().selectSingleNode("keyword[@name='" + tagName + "']");
+		ClassLoader classLoader = getKeywordsClassLoader(namespace);
 		
-		if (node == null) {
-			throw new WareNoKeywordsFoundException("no such keyworld [" + tagName + "] in namespace [" + namespace.getURI() + "]");
-		}
+		String className = getKeyWordsClass(element) ;
 		
-		ClassLoader classLoader = null;
-		
-		ClassLoader documentClassLoader = getWareKeywordsClassLoader(keywordsDocument);
-		//class loader buffer need!!!
-		Node classPathNode = node.selectSingleNode("@class-path");
-		if (classPathNode != null) {
-			String classPath = classPathNode.getText();
-			classLoader = new URLClassLoader(new URL[]{new URL(classPath)}, documentClassLoader);
-		} else {
-			classLoader = documentClassLoader;
-		}
-		
-		String className = node.selectSingleNode("@class-name").getText();
 		Driver driver = (Driver)classLoader.loadClass(className).newInstance();
+		
 		return driver;
 	}
-	
-	public static ClassLoader getWareKeywordsClassLoader(WareKeywordsDocument keywordsDocument) throws Exception {
-		ClassLoader loader = keywordsDocument.getClassLoader();
-		if (loader == null) {
-			List<? extends Node> list = keywordsDocument.getRootElement().selectNodes("class-path-list/class-path");
-			URL[] url = new URL[list.size()];
-			for (int i = 0; i < url.length; i++) {
-				Node node = (Node) list.get(i);
-				url[i] = new URL(node.getText().trim());
+
+
+	/**
+	 * 获取类名 <br>
+	 * 如 : ware.xml中的标签 : <ghcc-ware-helloworld:speak-words>
+	 * ghcc-ware-helloworld 的命名空间对应  http://host:port/path/ghcc.ware.helloworld<br>
+	 *  speak-words 对应的类名  speak.SpeakWords
+	 * 于是拼接起来就是  ghcc.ware.helloworld.speak.SpeakWords
+	 * @param element
+	 * @return
+	 */
+	public static String getKeyWordsClass(Element element) {
+		String className = null;
+		String uri = element.getNamespaceURI();
+		String warePackage = uri.substring(uri.lastIndexOf('/')+1);
+		String name = element.getName();
+		String[] namePart = name.split("-");
+		StringBuffer packageBuf = new StringBuffer();
+		StringBuffer classNameBuf = new StringBuffer();
+		for (int i = 0; i < namePart.length; i++) {
+			if(i < namePart.length -1) {
+				packageBuf.append(namePart[i]);
+				packageBuf.append(".");
 			}
-			loader = new URLClassLoader(url);
-			keywordsDocument.setClassLoader(loader);
-		} 
-		return loader;
+			classNameBuf.append(namePart[i].substring(0, 1).toUpperCase() + namePart[i].substring(1));
+		}
+		if (warePackage.length() > 0) {
+			warePackage += ".";
+		}
+		className = warePackage + packageBuf + classNameBuf;
+		
+		return className;
 	}
 	
-	public static WareKeywordsDocument getWareKeywordsDocument(Namespace namespace) throws Exception {
-		WareKeywordsDocument wareKeywordsDocument = WareContext.getWareKeywordsDocument(namespace);
-		if (wareKeywordsDocument == null) {
-			URL keywordsURL = new URL(namespace.getURI());
-			Document keywordsDoc = new SAXReader().read(new InputStreamReader(keywordsURL .openStream()));
-			wareKeywordsDocument = new WareKeywordsDocument(namespace);
-			wareKeywordsDocument.setKeywordsDocument(keywordsDoc);
-			WareContext.addWareKeywordsDocument(namespace, wareKeywordsDocument);
-		}
+	/**
+	 * 获取ClassLoader<br>
+	 * 根据命名空间来获取, 使用命名规范来获取<br>
+	 * 如: 命名空间 ： http://host:port/path/production-name/ghcc.ware.helloworld<br>
+	 * 会默认指向两个路径 classes  :  http://host:port/path/production-name/java-classes/<br>
+	 * 另外一个就是jar路径  : http://host:port/path/production-name/java-lib/production-name.jar<br>
+	 * @param namespace
+	 * @return
+	 * @throws MalformedURLException
+	 */
+	public static ClassLoader getKeywordsClassLoader(Namespace namespace) throws MalformedURLException {
+		ClassLoader classLoader = null;
+		String uri = namespace.getURI();
+		String productionPath = uri.substring(0, uri.lastIndexOf('/')+1);
+		URL keywordsClassesURL = new URL(productionPath + "java-classes/");
 		
-		return wareKeywordsDocument;
+		String productionName = productionPath.substring(productionPath.lastIndexOf('/'));
+		
+		URL keywordsJarURL = new URL(productionPath + "java-lib/" + productionName + ".jar");
+		
+		classLoader = new URLClassLoader(new URL[]{keywordsJarURL, keywordsClassesURL}); 
+		return classLoader;
 	}
 }

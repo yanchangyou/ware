@@ -81,12 +81,12 @@ public class KeywordsUtil {
 	public static ClassLoader getKeywordsClassLoader(Namespace namespace) throws MalformedURLException {
 		ClassLoader classLoader = null;
 		String uri = namespace.getURI();
-		String productionPath = uri.substring(0, uri.lastIndexOf('/')+1);
-		URL keywordsClassesURL = new URL(productionPath + "java-classes/");
+		String productionPath = uri.substring(0, uri.lastIndexOf('/'));
+		URL keywordsClassesURL = new URL(productionPath + "/java-classes/");
 		
-		String productionName = productionPath.substring(productionPath.lastIndexOf('/'));
+		String productionName = productionPath.substring(productionPath.lastIndexOf('/')+1);
 		
-		URL keywordsJarURL = new URL(productionPath + "java-lib/" + productionName + ".jar");
+		URL keywordsJarURL = new URL(productionPath + "/java-lib/" + productionName + ".jar");
 		
 		classLoader = new URLClassLoader(new URL[]{keywordsJarURL, keywordsClassesURL}); 
 		return classLoader;

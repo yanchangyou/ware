@@ -17,10 +17,9 @@ public class SpeakWords implements Driver {
 		System.out.println(e.getText());
 	}
 
-	public void dealWareException(WareException paramWareException)
+	public void dealWareException(WareException e)
 			throws WareException, Exception {
-		
-		
+		throw e;
 	}
 
 }
